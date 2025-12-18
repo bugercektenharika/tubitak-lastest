@@ -1,0 +1,38 @@
+/* Custom CSS for a darker, modern look */
+
+/* Genel Vücut ve Yazı Tipi İyileştirmeleri */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    min-height: 100vh; /* Tam ekran yüksekliği */
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form ve Sonuç Card'ları için daha koyu arka plan */
+.bg-darker {
+    background-color: #1a1a1a !important; /* Biraz daha koyu bir siyah */
+}
+
+/* Linklerin Vurgulanması */
+.site-link {
+    color: #e0afff !important; /* Orijinal HTML'deki mor tonunu koruma */
+    transition: color 0.3s ease;
+    font-size: 1.25rem;
+}
+
+.site-link:hover {
+    color: #ffd700 !important; /* Hover'da altın sarısı vurgu */
+    text-decoration: underline;
+}
+
+/* Navbar'da daha belirgin bir vurgu */
+.navbar-brand span {
+    letter-spacing: 1px;
+}
+
+/* Mobil uyumlulukta butonun tam genişlikte olması */
+@media (max-width: 576px) {
+    .btn-lg {
+        width: 100%;
+    }
+}
